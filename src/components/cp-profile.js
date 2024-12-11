@@ -14,9 +14,10 @@ const Profile = () => {
           <div className="profile_details">
             <h1 className="p-0">A.Srikanth Goud</h1>
             <p className="profile_sub_title">FRONT-END DEVELOPER</p>
+            <a href="/Srikanth Goud.pdf" className="profile_sub_title" download="Srikanth_Goud_Resume.pdf">Download Resume</a>
           </div>
         </div>
-              <div className="gif_image_container">
+        <div className="gif_image_container">
           <img
             className="profile_img"
             src={require("../images/computer-man.gif")}

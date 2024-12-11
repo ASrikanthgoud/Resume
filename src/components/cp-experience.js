@@ -8,6 +8,7 @@ const Experience = () => {
             duration: "June 2023 – Present",
             description: "A product-based company that develops 'Hooper', a low-code automation platform for businesses of all sizes. On the client side, the Hooper app is available on Android/iOS on mobile and available over the web as well.",
             projectName: "Hooper Product (Web Application)",
+            projectLink: "https://pror.kellton.net",
             items: [
                 "Developed responsive web applications using ReactJS, Redux, Context, JavaScript, HTML5, CSS.",
                 "Utilized HTTP/AJAX for data transmission in JSON and consumed RESTful web services.",
@@ -22,6 +23,7 @@ const Experience = () => {
             duration: "May 2015 – May 2023",
             description: "A product-based company that develops 'Hooper', a low-code automation platform for businesses of all sizes. On the client side, the Hooper app is available on Android/iOS on mobile and available over the web as well.",
             projectName: "Hooper (Web Portal and Hybrid Mobile Application)",
+            projectLink: "https://pror.kellton.net",
             items: [
                 "Developed responsive web application (Hooper) using AngularJS, Bootstrap, CSS3, HTML5, JavaScript & MVC frameworks.",
                 "Developed responsive Mobile hybrid application (Hooper) for Android/iOS using Angular, Ionic, CSS3, HTML5,Typescript.",
@@ -41,6 +43,7 @@ const Experience = () => {
             duration: "Jan 2022 – March 2022",
             description: "An e-commerce app designed for small retail stores in Kenya. Anytime Ltd, a large-scale wholesale distributor of FMCG products, needed a comprehensive mobile app to onboard their growing user base of over 5000 stores.",
             projectName: "Soko Time (Hybrid Consumer Mobile Application)",
+            projectLink: "https://www.hooperlabs.com",
             items: [
                 "Developed a responsive hybrid mobile applications for Android/iOS using Angular10, Ionic5, CSS3, HTML5, Typescript.",
                 "Integrated M-pesa for online payments.",
@@ -56,6 +59,7 @@ const Experience = () => {
             duration: "Oct 2021 – Dec 2021",
             description: "Rent-A-Desk, a leading co-working space provider with locations across major Indian metros, needed an app to enhance the digital experience for their customers. The app allows users to check availability, book meeting rooms, and raise support tickets.",
             projectName: "Rent A Desk (Hybrid Consumer Mobile Application)",
+            projectLink: "https://www.hooperlabs.com",
             items: [
                 "Developed a responsive hybrid mobile applications for Android/iOS using Angular10, Ionic5, CSS3, HTML5, Typescript.",
                 "Tested RESTful services using Rest Client and Postman.",
@@ -76,7 +80,7 @@ const Experience = () => {
                         <div className="timeline-content">
                             <h3>{exp.role}</h3>
                             <h4>{exp.company}</h4>
-                            <p><strong>Project:</strong> {exp.projectName}</p>
+                            <p><strong>Project:</strong> <a href={exp?.projectLink} target="_blank" rel="noreferrer">{exp.projectName}</a></p>
                             <p><strong>{exp.duration}</strong></p>
                             <p>{exp.description}</p>
                             <ul className="tasks-list">
